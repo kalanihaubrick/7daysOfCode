@@ -10,8 +10,6 @@ let bebidas = [];
 let limpeza = [];
 let doces = [];
 
-
-
 while(lista != "não"){
     if(legumes.length === 0 && frutas.length === 0 && graos.length === 0 && laticinios.length === 0 && bebidas === 0 & limpeza.length === 0 && doces.length === 0){
         lista = prompt("Você deseja adicionar uma comida na lista de compras? Responda 'sim' ou 'não'.");
@@ -24,7 +22,7 @@ while(lista != "não"){
         }
         
         if (lista === "não"){  
-        break;
+            break;
         }
         
         if (lista === "sim") {
@@ -59,15 +57,16 @@ while(lista != "não"){
             alert("Lista vazia!");
         } else {
             remover = prompt (`Lista de compras:\n Legumes: ${legumes};\n Frutas: ${frutas};\n Grãos: ${graos};\n Laticíneos: ${laticinios};\n Bebidas: ${bebidas};\n Limpeza: ${limpeza};\n Doces: ${doces}. Qual produto deseja remover ?`)
+
             if ( legumes.indexOf(remover) != -1){
                 legumes.splice(legumes.indexOf(remover), 1);
                 alert(`O item ${remover} foi removido com sucesso!`)
             } else if ( frutas.indexOf(remover) != -1){
-            frutas.splice(frutas.indexOf(remover), 1);
-            alert(`O item ${remover} foi removido com sucesso!`)
+                frutas.splice(frutas.indexOf(remover), 1);
+                 alert(`O item ${remover} foi removido com sucesso!`)
             } else if ( graos.indexOf(remover) != -1){
-            graos.splice(graos.indexOf(remover), 1);
-            alert(`O item ${remover} foi removido com sucesso!`)
+                graos.splice(graos.indexOf(remover), 1);
+                alert(`O item ${remover} foi removido com sucesso!`)
             } else if ( laticinios.indexOf(remover) != -1){
                 laticinios.splice(laticinios.indexOf(remover), 1);
                 alert(`O item ${remover} foi removido com sucesso!`)
@@ -85,12 +84,8 @@ while(lista != "não"){
             }
         }
     }
-    
-
-    
-   // lista = prompt("Deseja adicionar mais alguma comida? ou digite 'remover' para retirar da lista")
 }
 
 alert("Sua Lista foi finalizada!");
 
-console.log(`Lista de compras:\n Legumes: ${legumes};\n Frutas: ${frutas};\n Grãos: ${graos};\n Laticíneos: ${laticinios};\n Bebidas: ${bebidas};\n Limpeza: ${limpeza};\n Doces: ${doces}.`);
+alert(`Lista de compras:\n Legumes: ${legumes};\n Frutas: ${frutas};\n Grãos: ${graos};\n Laticíneos: ${laticinios};\n Bebidas: ${bebidas};\n Limpeza: ${limpeza};\n Doces: ${doces}.`);
