@@ -1,6 +1,7 @@
 let item = '';
 let tipo = '';
 let remover = '';
+let lista = "sim";
 let legumes = [];
 let frutas = [];
 let graos = [];
@@ -8,7 +9,7 @@ let laticinios = [];
 let bebidas = [];
 let limpeza = [];
 let doces = [];
-let lista = "sim";
+
 
 
 while(lista != "não"){
@@ -17,12 +18,12 @@ while(lista != "não"){
     } else {
         lista = prompt("Você deseja adicionar uma comida na lista de compras? Responda 'sim', 'não' ou 'remover'.");
     }
-    while (lista != "sim" && lista != "não" && lista != "remover") {  //enquanto o texto lido for diferente de "sim", "não" e "remover", exibir que não foi reconhecido e perguntar novamente
+    while (lista != "sim" && lista != "não" && lista != "remover") {  
         alert(`Operação não reconhecida!`);
             lista = prompt("Você deseja adicionar uma comida na lista de compras? Responda 'sim' ou 'não'.");
         }
         
-        if (lista === "não"){  //se o texto lido for "não", sair do while
+        if (lista === "não"){  
         break;
         }
         
